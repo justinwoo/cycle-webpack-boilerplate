@@ -5,9 +5,9 @@ import Page2 from '../dialogue/pages/page2/page2-index'
 
 function routes(sources) {
   return {
-    '/': div('.home', Home(sources).DOM),
-    '/page1': div('.Page1',Page1(sources).DOM),
-    '/page2': div('.Page2',Page2(sources).DOM),
+    '/cycle-webpack-boilerplate/': div('.home', Home(sources).DOM),
+    '/cycle-webpack-boilerplate/page1': div('.Page1',Page1(sources).DOM),
+    '/cycle-webpack-boilerplate/page2': div('.Page2',Page2(sources).DOM),
     '*': h1(`Page could not be found`),
   }
 }
