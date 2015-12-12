@@ -1,9 +1,9 @@
 import Rx from 'rx'
 import view from './page1-view'
 
-const Page1 = () => {
+const Page1 = (newSources) => {
   return {
-    DOM: Rx.Observable.just(view())
+    DOM: view(newSources.homeState)
   }
 }
 

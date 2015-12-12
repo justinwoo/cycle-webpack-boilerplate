@@ -8,7 +8,8 @@ const Home = (sources) => {
   const state$ = model(actions)
 
   return {
-    DOM: view(state$)
+    DOM: view(state$),
+    state: state$
   }
 }
 
